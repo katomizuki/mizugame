@@ -1,0 +1,141 @@
+/* ここからCSSを記述してください。 */
+p{
+    margin: 0;
+}
+
+h4{
+    margin: 0;  
+}
+
+.startPage{
+    background-image: url("../img/undraw_city_life_gnpr.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.personIcon{
+    width: auto;
+    height: 200px;
+    cursor: pointer;
+}
+.personIcon:hover{
+	/* 透明度を上げることで、画像の色を薄く見せる。*/
+	opacity:0.5;
+}
+.personIcon:active {
+  position: relative;
+	top: 10px;
+}
+
+
+.gameWindow{
+    height: 95%;
+}
+
+.leftBox{
+    height: 95%;
+}
+
+.rightBox{
+    height: 95%;
+}
+
+.PersonBox{
+    height: 20%;
+}
+
+.infoBox{
+    height: 20%;
+}
+
+.informationBox{
+    height:40%;
+    width: 48%;
+
+}
+
+.actionBox{
+    height: 60%;
+}
+
+.action-body{
+    padding:0;
+}
+
+.action{
+    cursor: pointer;
+}
+.font-weight {
+  font-weight: bold;
+}
+.bg {
+  background-color: rgb(146, 109, 195);
+}
+
+.text-align-center {
+  text-align: center;
+}
+.circle {
+  border-radius: 50%;
+}
+
+#submitbtn:active{
+   position: relative;
+	top: 10px;
+}
+#homebtn:active {
+   position: relative;
+	top: 10px;
+}
+#homebtn2:active {
+   position: relative;
+	top: 10px;
+}
+#backbtn:active {
+  position: relative;
+  top: 10px;
+}
+#startbtn:active {
+   position: relative;
+    top: 10px;
+}
+#continuebtn:active {
+    position: relative;
+    top: 10px;
+}
+#memobtn:active {
+    position: relative;
+    top: 10px;
+}
+#homebtn:active {
+  position: relative;
+    top: 10px;
+}
+#homebtn3:active {
+  position: relative;
+    top: 10px;
+}
+#buybtn:active {
+  position: relative;
+    top: 10px;
+}
+#formbtn:active {
+  position: relative;
+  top: 10px;
+}
+
+
+.area {
+  background-image: url("/img/undraw_celebration_0jvk.png");
+  background-size:cover;
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+

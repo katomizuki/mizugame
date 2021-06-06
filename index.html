@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Startup</title>
+<!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- fontawesome -->
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="css/styles.css">
+<!-- <--favicon----> 
+  <link rel="icon" type="image/x-icon" href="img/tree.png">
+</head>
+
+<body>
+
+  <!-- 背景  id →mainWindow  -->
+  <div id="mainWindow" class="vh-100  bg-secondary d-flex flex-wrap justify-content-center align-items-center">
+
+
+    <!-- スタート画面  id → startPage -->
+    <div class="d-flex align-items-center justify-content-center">
+      <div id="startPage"
+      class="startPage text-center d-flex flex-wrap justify-content-center align-items-center d-block">
+      <!-- ------------------------アイコン集--------------------------------------------------------------- -->
+      <div>
+        <i class="fab fa-android fa-3x"></i>
+        <i class="fab fa-apple fa-3x"></i>
+        <i class="fab fa-amazon fa-3x"></i>
+        <i class="fab fa-airbnb fa-3x"></i>
+        <i class="fab fa-facebook fa-3x"></i>
+        <i class="fab fa-discord fa-3x"></i>
+        <i class="fab fa-google fa-3x"></i>
+        <i class="fab fa-twitter fa-3x"></i>
+        <i class="fab fa-intagram fa-3x"></i>
+        <i class="fab fa-alipay fa-3x"></i>
+        <i class="fab fa-docker fa-3x"></i>
+        <i class="fab fa-evernote fa-3x"></i>
+        <i class="fab fa-github fa-3x"></i>
+        <i class="fab fa-snapchat fa-3x"></i>
+       <i class="fab fa-tiktok fa-3x"></i>
+      </div>
+<!-- --------------------------ここまで-------------------------------------------------------- -->
+<!-- _______________________________下記からタイトルとスタートボタン、コンテニューボタン___________________________________________________ -->
+        <h1 class="col-12 pb-3 fa-5x text-dark font-weight">Startup<br>〜Aiming for an IPO〜</h1>
+        <!-- ---------------スタートボタン id startbtn ------------------------------- -->
+        <button id="startbtn" type="button"
+          class="btn btn-lg btn-info fa-2x text-dark font-weight m-3">From the start</button>
+          <!-- ---------------コンテニューボタン id continuebtn ------------------------------- -->
+        <button id="continuebtn" type="button"
+          class="btn btn-lg btn-info fa-2x text-dark font-weight m-3">Continue</button>
+      <button class = "btn btn-lg btn-info fa-2x text-dark font-weight m-3" onclick="location.href = 'listapp/memo.html'">Entrepreneur Note</button>
+      </div>
+    </div>
+
+
+    <!-- アカウント作成画面 -->
+    <div id="firstPage" class="d-flex align-items-center col-md-7 col-10 text-dark ">
+      <div id="first-form" class="bg-white col-12 text-center p-4 d-none">
+        <h2 class="pb-3 font-weight">Please type your company information</h2>
+        <div>
+          <!-- セレクト（会社住所のセレクト） -->
+          <select class="form-select m-2" aria-label="Default select example"> 
+            <option selected>Where is your office?</option>
+            <option value="1">G's in Tokyo</option>
+            <option value="2">G's in Fukuoka</option>
+            <option value="3">G's in Sapporo</option>
+          </select>
+          <!-- ----------セレクト（どの産業）---------- -->
+          <select class="form-select m-2" aria-label="Default select example" id = "industryselect">
+            <option selected >Which is your industry?</option>
+            <option value="1">IT industry</option>
+            <option value="2">D to C industry</option>
+            <option value="3">Consulting industry</option>
+           
+          </select>
+
+        </div>
+<!-- ---------------------------新規アカウント登録フォーム id accountform ----------------- -->
+        <form id="accountform" class="form">
+         
+          <div class="form-group">
+            <input type="text" name="companyName" class="form-control" placeholder="companyname" required>
+          </div>
+<!-- ----------------------------------------アカウント提出ボタン id submitbtn --------------------- -->
+
+  <button id="submitbtn" type="submit" class="btn btn-info col-12 text-dark font-weight">Submit & Start Game!!</button>
+
+</form>
+        <div class = "d-flex justify-content-end m-4">
+          <button id="homebtn" type="submit" class="btn btn-primary col-4 text-dark font-weight">To StartPage</button>
+        </div>
+      </div>
+      <!-- continue画面  id continue-form  -->
+      <div id="continue-form" class="bg-light col-12 text-center p-4 d-none">
+        <h2 class="pb-3 font-weight">Please type your company name and industry</h2>
+
+<select class="form-select m-2" aria-label="Default select example" id="select-continue">
+  <option selected>Which is your industry?</option>
+  <option value="1">IT industry</option>
+  <option value="2">D to C industry</option>
+  <option value="3">Consulting industry</option>
+
+</select>
+
+
+        <!-- --------コンテニューフォーム    id continueform --------- -->
+        <form id="continueform" class="form">
+          <div class="form-group">
+            <input type="text" name="continue" class="form-control" placeholder="companyname" required>
+          </div>
+          <!-- ---------------コンテニューボタン    id continuebtn -------------- -->
+          <button id="formbtn" type="submit" class="btn btn-info col-12 font-weight text-dark">Submit!!</button>
+        </form>
+        <div class="d-flex justify-content-end m-4">
+          <button id="homebtn2" type="submit" class="btn btn-primary col-4 text-dark font-weight">To StartPage</button>
+        </div>
+      </div>
+    </div>
+    <!-- メイン画面  id mainpage-->
+    <div id="mainpage">
+    </div>
+    
+   
+  </div>
+  <!-- ----------main.js -------- -->
+  <script src="js/main.js"></script>
+   <!-- ---------------bootstrap（ｊｓ）---------- -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</body>
+
+</html>
